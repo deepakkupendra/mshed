@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$('#prev').on('click', prevSlide);// call function prevSlide
 	
 	// Auto Slider Handler
-	if(autoswitch == true){
+	if(false){
 		setInterval(nextSlide,autoswitch_speed);// call function and value 4000
 	}
 	
