@@ -50,7 +50,8 @@ p{
 .img1, .img2, .img3, .img4, .img5 {
 	width:100%;
 	margin:0;
-	padding:0;
+    padding:0;
+    background-image: url("./img/portfolio/Architecture/Arivu/01-full.jpg");
 } 
 
 
