@@ -17,6 +17,16 @@ $(document).ready(function(){
 	$('#next').on('click', nextSlide);// call function nextSlide
 	
 	// Prev Event Handler
+	$('#prev2').on('click', prevSlide);// call function prevSlide
+	
+	$('#next2').on('click', nextSlide);// call function nextSlide
+	
+	// Prev Event Handler
+	$('#prev3').on('click', prevSlide);// call function prevSlide
+	
+	$('#next3').on('click', nextSlide);// call function nextSlide
+	
+	// Prev Event Handler
 	$('#prev').on('click', prevSlide);// call function prevSlide
 	
 	// Auto Slider Handler
