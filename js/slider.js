@@ -5,58 +5,113 @@ $(document).ready(function(){
 	var autoswitch_speed = 5000; //auto slider speed
 	
 	// add first initial active class
-	$(".slide").first().addClass("active");
+	$(".slide1").first().addClass("active1");
+	$(".slide2").first().addClass("active2");
+	$(".slide3").first().addClass("active3");
 	
 	// hide all slides
-	$(".slide").hide;
+	$(".slide1").hide;
+	$(".slide2").hide;
+	$(".slide3").hide;
 	
 	// show only active class slide
-	$(".active").show();
+	$(".active1").show();
+	$(".active2").show();
+	$(".active3").show();
 	
 	// Next Event Handler
-	$('#next').on('click', nextSlide);// call function nextSlide
+	$('#next').on('click', nextSlide1);// call function nextSlide
+	$('#prev').on('click', prevSlide1);// call function prevSlide
 	
 	// Prev Event Handler
-	$('#prev2').on('click', prevSlide);// call function prevSlide
+	$('#next2').on('click', nextSlide2);// call function nextSlide
+	$('#prev2').on('click', prevSlide2);// call function prevSlide	
 	
-	$('#next2').on('click', nextSlide);// call function nextSlide
-	
-	// Prev Event Handler
-	$('#prev3').on('click', prevSlide);// call function prevSlide
-	
-	$('#next3').on('click', nextSlide);// call function nextSlide
 	
 	// Prev Event Handler
-	$('#prev').on('click', prevSlide);// call function prevSlide
-	
-	// Auto Slider Handler
-	if(false){
-		setInterval(nextSlide,autoswitch_speed);// call function and value 4000
-	}
+	$('#next3').on('click', nextSlide3);// call function nextSlide
+	$('#prev3').on('click', prevSlide3);// call function prevSlide
+
 	
 	// Switch to next slide
-	function nextSlide(){
-		$('.active').removeClass('active').addClass('oldActive');
-		if($('.oldActive').is(':last-child')){
-			$('.slide').first().addClass('active');
+	function nextSlide1(){
+		$('.active1').removeClass('active1').addClass('oldActive1');
+		if($('.oldActive1').is(':last-child')){
+			$('.slide1').first().addClass('active1');
 		} else {
-			$('.oldActive').next().addClass('active');
+			$('.oldActive1').next().addClass('active1');
 		}
-		$('.oldActive').removeClass('oldActive');
-		$('.slide').fadeOut(speed);
-		$('.active').fadeIn(speed);
+		$('.oldActive1').removeClass('oldActive1');
+		$('.slide1').fadeOut(speed);
+		$('.active1').fadeIn(speed);
+	}
+		function nextSlide2(){
+		$('.active2').removeClass('active2').addClass('oldActive2');
+		if($('.oldActive2').is(':last-child')){
+			$('.slide2').first().addClass('active2');
+		} else {
+			$('.oldActive2').next().addClass('active2');
+		}
+		$('.oldActive2').removeClass('oldActive2');
+		$('.slide2').fadeOut(speed);
+		$('.active2').fadeIn(speed);
+	}
+	function nextSlide3(){
+		$('.active3').removeClass('active3').addClass('oldActive3');
+		if($('.oldActive3').is(':last-child')){
+			$('.slide3').first().addClass('active3');
+		} else {
+			$('.oldActive3').next().addClass('active3');
+		}
+		$('.oldActive3').removeClass('oldActive3');
+		$('.slide3').fadeOut(speed);
+		$('.active3').fadeIn(speed);
 	}
 	
+	
+	
+	
 	// Switch to prev slide
-	function prevSlide(){
-		$('.active').removeClass('active').addClass('oldActive');
-		if($('.oldActive').is(':first-child')){
-			$('.slide').last().addClass('active');
+	function prevSlide1(){
+		$('.active1').removeClass('active1').addClass('oldActive1');
+		if($('.oldActive1').is(':first-child')){
+			$('.slide1').last().addClass('active1');
 		} else {
-			$('.oldActive').prev().addClass('active');
+			$('.oldActive1').prev().addClass('active1');
 		}
-		$('.oldActive').removeClass('oldActive');
-		$('.slide').fadeOut(speed);
-		$('.active').fadeIn(speed);
+		$('.oldActive1').removeClass('oldActive1');
+		$('.slide1').fadeOut(speed);
+		$('.active1').fadeIn(speed);
 	}
+	
+	function prevSlide2(){
+		$('.active2').removeClass('active2').addClass('oldActive2');
+		if($('.oldActive2').is(':first-child')){
+			$('.slide2').last().addClass('active2');
+		} else {
+			$('.oldActive2').prev().addClass('active2');
+		}
+		$('.oldActive2').removeClass('oldActive2');
+		$('.slide2').fadeOut(speed);
+		$('.active2').fadeIn(speed);
+	}
+    
+	function prevSlide3(){
+		$('.active3').removeClass('active3').addClass('oldActive3');
+		if($('.oldActive3').is(':first-child')){
+			$('.slide3').last().addClass('active3');
+		} else {
+			$('.oldActive3').prev().addClass('active3');
+		}
+		$('.oldActive3').removeClass('oldActive3');
+		$('.slide3').fadeOut(speed);
+		$('.active3').fadeIn(speed);
+	}
+	
+	
+	
+	
+	
+	
+	
 });
