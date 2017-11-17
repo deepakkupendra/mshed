@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(".slide1").first().addClass("active1");
 	$(".slide2").first().addClass("active2");
 	$(".slide3").first().addClass("active3");
-	$(".slide3").first().addClass("active4");
+	$(".slide4").first().addClass("active4");
 	
 	// hide all slides
 	$(".slide1").hide();
@@ -37,8 +37,8 @@ $(document).ready(function(){
 	$('#prev3').on('click', prevSlide3);// call function prevSlide
 
 	// Prev Event Handler
-	$('#next4').on('click', nextSlide3);// call function nextSlide
-	$('#prev4').on('click', prevSlide3);// call function prevSlide 
+	$('#next4').on('click', nextSlide4);// call function nextSlide
+	$('#prev4').on('click', prevSlide4);// call function prevSlide 
 
 
 
