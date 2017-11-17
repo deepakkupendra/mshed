@@ -10,15 +10,20 @@ $(document).ready(function(){
 	$(".slide3").first().addClass("active3");
 	
 	// hide all slides
-	$(".slide1").hide;
-	$(".slide2").hide;
-	$(".slide3").hide;
+	$(".slide1").hide();
+	$(".slide2").hide();
+	$(".slide3").hide();
 	
 	// show only active class slide
 	$(".active1").show();
 	$(".active2").show();
 	$(".active3").show();
 	
+
+
+
+
+
 	// Next Event Handler
 	$('#next').on('click', nextSlide1);// call function nextSlide
 	$('#prev').on('click', prevSlide1);// call function prevSlide
