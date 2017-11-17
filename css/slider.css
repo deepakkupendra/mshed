@@ -67,6 +67,12 @@ p{
 	height:100%;
 }
 
+.slide4{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
 .slide1:nth-child(1){
 	background:#FFFFFF;
 }
@@ -74,6 +80,9 @@ p{
 	background:#FFFFFF;
 }
 .slide3:nth-child(1){
+	background:#FFFFFF;
+}
+.slide4:nth-child(1){
 	background:#FFFFFF;
 }
 
@@ -86,6 +95,9 @@ p{
 .slide3:nth-child(2){
 	background:#FFFFFF;
 }
+.slide4:nth-child(2){
+	background:#FFFFFF;
+}
 
 .slide1:nth-child(3){
 	background:#FFFFFF;
@@ -94,6 +106,9 @@ p{
 	background:#FFFFFF;
 }
 .slide3:nth-child(3){
+	background:#FFFFFF;
+}
+.slide4:nth-child(3){
 	background:#FFFFFF;
 }
 
@@ -106,6 +121,9 @@ p{
 .slide3:nth-child(4){
 	background:#FFFFFF;
 }
+.slide4:nth-child(4){
+	background:#FFFFFF;
+}
 
 .slide1:nth-child(5){
 	background:#FFFFFF;
@@ -114,6 +132,9 @@ p{
 	background:#FFFFFF;
 }
 .slide3:nth-child(5){
+	background:#FFFFFF;
+}
+.slide4:nth-child(5){
 	background:#FFFFFF;
 }
 
@@ -131,7 +152,7 @@ p{
 
 
 
-#prev, #next, #prev2, #next2, #prev3, #next3{
+#prev, #next, #prev2, #next2, #prev3, #next3,#prev4, #next4{
 	cursor:pointer;
 	z-index:100;
 	background:#666;
@@ -146,12 +167,12 @@ p{
 	filter: alpha(opacity=70);
 }
 
-#next,#next2,#next3{
+#next,#next2,#next3,#next4{
 	float:right;
 	right:0;
 }
 
-#prev,#prev2,#prev3{
+#prev,#prev2,#prev3,#prev4{
 	float:left;
 	left:0;
 }

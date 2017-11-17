@@ -8,23 +8,22 @@ $(document).ready(function(){
 	$(".slide1").first().addClass("active1");
 	$(".slide2").first().addClass("active2");
 	$(".slide3").first().addClass("active3");
+	$(".slide3").first().addClass("active4");
 	
 	// hide all slides
 	$(".slide1").hide();
 	$(".slide2").hide();
 	$(".slide3").hide();
+	$(".slide4").hide();
 	
 	// show only active class slide
 	$(".active1").show();
 	$(".active2").show();
 	$(".active3").show();
+	$(".active4").show();
 	
 
-
-
-
-
-	// Next Event Handler
+  	// Next Event Handler
 	$('#next').on('click', nextSlide1);// call function nextSlide
 	$('#prev').on('click', prevSlide1);// call function prevSlide
 	
@@ -36,6 +35,12 @@ $(document).ready(function(){
 	// Prev Event Handler
 	$('#next3').on('click', nextSlide3);// call function nextSlide
 	$('#prev3').on('click', prevSlide3);// call function prevSlide
+
+	// Prev Event Handler
+	$('#next4').on('click', nextSlide3);// call function nextSlide
+	$('#prev4').on('click', prevSlide3);// call function prevSlide 
+
+
 
 	
 	// Switch to next slide
@@ -73,7 +78,17 @@ $(document).ready(function(){
 		$('.active3').fadeIn(speed);
 	}
 	
-	
+	function nextSlide4(){
+		$('.active4').removeClass('active4').addClass('oldActive4');
+		if($('.oldActive4').is(':last-child')){
+			$('.slide4').first().addClass('active4');
+		} else {
+			$('.oldActive4').next().addClass('active4');
+		}
+		$('.oldActive4').removeClass('oldActive4');
+		$('.slide4').fadeOut(speed);
+		$('.active4').fadeIn(speed);
+	}
 	
 	
 	// Switch to prev slide
@@ -111,6 +126,18 @@ $(document).ready(function(){
 		$('.oldActive3').removeClass('oldActive3');
 		$('.slide3').fadeOut(speed);
 		$('.active3').fadeIn(speed);
+	}
+
+	function prevSlide4(){
+		$('.active4').removeClass('active4').addClass('oldActive4');
+		if($('.oldActive4').is(':first-child')){
+			$('.slide4').last().addClass('active4');
+		} else {
+			$('.oldActive4').prev().addClass('active4');
+		}
+		$('.oldActive4').removeClass('oldActive4');
+		$('.slide4').fadeOut(speed);
+		$('.active4').fadeIn(speed);
 	}
 	
 	
